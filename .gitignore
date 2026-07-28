@@ -2,10 +2,11 @@
 kaggle.json
 .kaggle/
 
-# Raw / downloaded data files
+# Raw / downloaded data files (keep the Olympic dataset the notebook needs)
 *.zip
 *.xlsx
 *.csv
+!female_olympic_swimmers.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

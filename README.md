@@ -55,8 +55,9 @@ needs to make decisions.
 ```
 .
 ├── GB885_Assignment_6_Schlichtmann_T.ipynb   # the analysis notebook
+├── female_olympic_swimmers.csv               # Olympic Account team dataset (included so the notebook is reproducible)
 ├── README.md                                 # this file
-└── .gitignore                                # excludes secrets and data files
+└── .gitignore                                # excludes secrets and other data files
 ```
 
 ## How to run
@@ -65,8 +66,9 @@ needs to make decisions.
    (File → Upload notebook, or open it straight from GitHub).
 2. Run the cells top to bottom (**Runtime → Run all**).
 3. Two sections need a quick manual input; everything else loads automatically over the internet:
-   - **Olympic section** — when `files.upload()` runs, upload `female_olympic_swimmers.csv`
-     (provided in the course materials).
+   - **Olympic section** — when `files.upload()` runs, upload `female_olympic_swimmers.csv`.
+     This file is **included in this repository**, so just download it from the file list
+     above and select it when prompted.
    - **Social Media section** — this uses the Kaggle API, so upload your own `kaggle.json`
      token when prompted (Kaggle → Account → *Create New API Token*). The token is a secret
      and is intentionally excluded from this repository via `.gitignore`.
