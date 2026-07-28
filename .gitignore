@@ -1,0 +1,14 @@
+# Kaggle API credentials — never commit secrets
+kaggle.json
+.kaggle/
+
+# Raw / downloaded data files
+*.zip
+*.xlsx
+*.csv
+
+# Python / notebook cruft
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
