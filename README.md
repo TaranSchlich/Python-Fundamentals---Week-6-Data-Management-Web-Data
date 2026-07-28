@@ -48,13 +48,27 @@ needs to make decisions.
 - Flattening nested JSON and engineering per-game features
 - Answering questions with filtering, `groupby`, correlation, and interquartile range
 
-## Files
+## Repository structure
 
-- `GB885_Assignment_6_Schlichtmann_T.ipynb` — the analysis notebook
+```
+.
+├── GB885_Assignment_6_Schlichtmann_T.ipynb   # the analysis notebook
+├── README.md                                 # this file
+└── .gitignore                                # excludes secrets and data files
+```
 
-## Running it
+## How to run
 
-Open the notebook in Google Colab and run top to bottom. Two sources need manual input:
-the Olympic CSV is uploaded from your local machine, and the Kaggle section requires a
-personal `kaggle.json` API token (Kaggle → Account → *Create New API Token*). The Kaggle
-token is a secret and is intentionally excluded from this repository.
+1. Open `GB885_Assignment_6_Schlichtmann_T.ipynb` in [Google Colab](https://colab.research.google.com/)
+   (File → Upload notebook, or open it straight from GitHub).
+2. Run the cells top to bottom (**Runtime → Run all**).
+3. Two sections need a quick manual input; everything else loads automatically over the internet:
+   - **Olympic section** — when `files.upload()` runs, upload `female_olympic_swimmers.csv`
+     (provided in the course materials).
+   - **Social Media section** — this uses the Kaggle API, so upload your own `kaggle.json`
+     token when prompted (Kaggle → Account → *Create New API Token*). The token is a secret
+     and is intentionally excluded from this repository via `.gitignore`.
+
+Each section prints its answer inline — for example, the country that produced the most
+female Olympic swimmers, the highest-paid sport, and the most underused defensive player
+in the 2024 NBA season.
