@@ -1,5 +1,7 @@
 # Sports Talent Analytics — Multi-Source Data Ingestion
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TaranSchlich/Python-Fundamentals---Week-6-Data-Management-Web-Data/blob/main/GB885_Assignment_6_Schlichtmann_T.ipynb)
+
 A data-analysis notebook that pulls historic sports data from **four different source
 types** into pandas DataFrames and answers concrete business questions for a fictional
 sports-talent agency. Built in Google Colab for **GB885 — Python Fundamentals (Data
